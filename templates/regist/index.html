@@ -1,0 +1,136 @@
+{% extends 'baseTemplates/_header.html' %}
+{% load staticfiles %}
+
+{% block csslink %}
+    <link rel="stylesheet" href="{% static 'catHouseForum/assets/css/regist.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="content">
+
+        <div id="Leftbar"></div>
+        <div id="Rightbar">
+            <div class="sep20"></div>
+
+
+            <div class="box">
+                <div class="cell">
+                    <strong>V2EX = way to explore</strong>
+                    <div class="sep5"></div>
+                    <span class="fade">V2EX 是一个关于分享和探索的地方</span>
+                </div>
+                <div class="inner">
+                    <div class="sep5"></div>
+                    <div align="center"><a href="/signup" class="super normal button">现在注册</a>
+                        <div class="sep5"></div>
+                        <div class="sep10"></div>
+                        已注册用户请 &nbsp;<a href="/signin">登录</a></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="Main">
+            <div class="sep20"></div>
+
+            <div class="box">
+                <div class="header"><a href="/">猫舍</a> <span class="chevron">&nbsp;›&nbsp;</span> 注册</div>
+
+
+                <div class="inner">
+                    <form method="post" action="/signup">
+                        <table cellpadding="5" cellspacing="0" border="0" width="100%">
+                            <tbody>
+                            <tr>
+                                <td width="120" align="right" valign="top">
+                                    <div  class="sep5"></div>
+                                    <div class="title">用户名</div>
+                                </td>
+                                <td width="auto" align="left"><input type="text" class="sls"
+                                                                     name="a2eafef3326894bfcd9a34a09192ec08942805e345158f82cd3359025e2c80c0"
+                                                                     value="" autocomplete="off" autocorrect="off"
+                                                                     spellcheck="false" autocapitalize="off"
+                                                                     required="required">
+                                    <div class="sep5"></div>
+                                    <span class="fade">请使用半角的 a-z 或数字 0-9</span></td>
+                            </tr>
+                            <tr>
+                                <td width="120" align="right">密码</td>
+                                <td width="auto" align="left"><input type="password" class="sls"
+                                                                     name="439c1ef56257d9128b440e9b8d5aa01f6827a37903e3e1aa46a69db4a3f7dd73"
+                                                                     value="" autocomplete="new-password"
+                                                                     autocorrect="off" spellcheck="false"
+                                                                     autocapitalize="off" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td width="120" align="right" valign="top">
+                                    <div class="sep5"></div>
+                                    电子邮件
+                                </td>
+                                <td width="auto" align="left"><input type="email" class="sls"
+                                                                     name="8b0b6a292137bf9611e5732996b234216581297f732c989b581961d4a43a44ae"
+                                                                     value="" autocorrect="off" spellcheck="false"
+                                                                     autocapitalize="off" required="required">
+                                    <div class="sep5"></div>
+                                    <span class="fade">请使用真实电子邮箱注册，我们不会将你的邮箱地址分享给任何人</span></td>
+                            </tr>
+                            <tr>
+                                <td width="120" align="right" valign="top">
+                                    <div class="sep5"></div>
+                                    手机号
+                                </td>
+                                <td width="auto" align="left"><input type="tel" class="sls" name="phone_number" value=""
+                                                                     autocorrect="off" spellcheck="false"
+                                                                     autocapitalize="off" required="required">
+                                    <div class="sep5"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="120" align="right">你是机器人么？</td>
+                                <td width="auto" align="left">
+{#                                    <div style="background-image: url('/_captcha?once=13987'); background-repeat: no-repeat; width: 320px; height: 80px; border-radius: 3px; border: 1px solid #ccc;"></div>#}
+                                    <div class="sep10"></div>
+                                    <input type="text" class="sl"
+                                           name="46d64e23efe55ecbc7481afdb761d22e28ebd469350da182761be1cb0da0b8f1"
+                                           value="" autocorrect="off" spellcheck="false" autocapitalize="off"
+                                           placeholder="请输入上图中的验证码" required="required"></td>
+                            </tr>
+
+
+                            <tr>
+                                <td width="120" align="right">注册答题验证</td>
+                                <td width="auto" align="left">
+                                    <div class="challenge_container">下列软件中和其它的不是一类的是哪个？
+                                        <div class="sep10"></div>
+                                        <select name="a">
+                                            <option value="HeFP69h27Cv7rWT2wvZ2tg==">AutoCAD</option>
+                                            <option value="MLaxYYu1gV8K5SN3vx5Img==">Cinema 4D</option>
+                                            <option value="40Z8oLKTjgDkSIHi7pdrcQ==">Blender</option>
+                                            <option value="D6qSf-c5dZr7M3_mX8k4NA==">3ds Max</option>
+                                            <option value="maiSqieyBsiCv5HxXAVLQA==">Maya</option>
+                                            <option value="cxzloFjAVEt3b7yPCJuB3Q==">Aperture</option>
+                                        </select></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="120" align="right"></td>
+                                <td width="auto" align="left"><input type="hidden" name="once" value="13987"><input
+                                        type="submit" class="super normal button" value="注册"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    </div>
+{% endblock %}
