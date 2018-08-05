@@ -41,6 +41,7 @@
 
                 <div class="inner">
                     <form method="post" action="/signup">
+                        {% csrf_token %}
                         <table cellpadding="5" cellspacing="0" border="0" width="100%">
                             <tbody>
                             <tr>
@@ -90,13 +91,8 @@
 
                             <tr>
                                 <td width="120" align="right">你是机器人么？</td>
-                                <td width="auto" align="left">
-{#                                    <div style="background-image: url('/_captcha?once=13987'); background-repeat: no-repeat; width: 320px; height: 80px; border-radius: 3px; border: 1px solid #ccc;"></div>#}
-                                    <div class="sep10"></div>
-                                    <input type="text" class="sl"
-                                           name="46d64e23efe55ecbc7481afdb761d22e28ebd469350da182761be1cb0da0b8f1"
-                                           value="" autocorrect="off" spellcheck="false" autocapitalize="off"
-                                           placeholder="请输入上图中的验证码" required="required"></td>
+                                <td width="auto" align="left"><div style=" background-repeat: no-repeat; width: 320px; height: 80px; border-radius: 3px; border: 1px solid #ccc;" >
+                                    <span class="v5-yzm fr"><a href="#" class="next-captcha"><img style=" background-repeat: no-repeat; width: 320px; height: 80px; border-radius: 3px; border: 1px solid #ccc;" src="{{ image_url }}" class="captcha" alt="captcha"></a></span></div><div class="sep10"></div><input type="text" class="sl" name="bd7e1d41097f3dabd4de6b57e63c0f35745b6abfe2639220c66544f12eb29440" value="" autocorrect="off" spellcheck="false" autocapitalize="off" placeholder="请输入上图中的验证码" required="required"></td>
                             </tr>
 
 
